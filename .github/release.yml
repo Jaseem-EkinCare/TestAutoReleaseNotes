@@ -1,4 +1,5 @@
 changelog:
+  - title: Whats new for this release 🥳
   exclude:
     labels:
       - ignore-for-release
@@ -7,13 +8,11 @@ changelog:
   categories:
     - title: Breaking Changes 🛠
       labels:
-        - Semver-Major
         - breaking-change
     - title: Exciting New Features 🎉
       labels:
-        - Semver-Minor
         - enhancement
-    - title: Bug Fixes 🎉
+    - title: Bug Fixes 🐛
       labels:
         - fixes
     - title: Other Changes
