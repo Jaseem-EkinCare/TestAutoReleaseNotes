@@ -43,9 +43,10 @@ fun Greeting(name: String) {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text(text = name)
-        Spacer(modifier = Modifier.height(16.dp))
-        Text(text = name)
+        repeat(3) {
+            Text(text = name)
+            Spacer(modifier = Modifier.height(16.dp))
+        }
     }
 }
 
