@@ -1,19 +1,19 @@
-## What the PR is about 🎙
 <!-- Add the changes you made here: -->
 <!-- Example: -->
 <!-- * Adds shiny button -->
 <!-- * UI Revamp -->
 <!-- * Fixes #1434  -->
-#### Changes/Updates to look out for ✨
+
+**Changes proposed in this PR 🎙**
 * <Change1/Update1>
 
-#### Bug Fixes 🐛
+**Bug Fixes 🐛**
 * Fixes #<issue_number_goes_here> 
 
-#### Screenshots 📸
+**Screenshots 📸**
 
 *Note*
-> Important things that should be noted
+> Important things to be highlighted
 
 
 
