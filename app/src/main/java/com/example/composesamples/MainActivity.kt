@@ -3,10 +3,6 @@ package com.example.composesamples
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
@@ -14,8 +10,10 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.example.composesamples.ui.theme.ComposeSamplesTheme
 
 class MainActivity : ComponentActivity() {
@@ -27,7 +25,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Greeting("Android")
+                    Greeting("Android", "Google Mobile OS")
                 }
             }
         }
@@ -35,7 +33,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String) {
+fun Greeting(title: String, desc: String) {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -43,10 +41,10 @@ fun Greeting(name: String) {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        repeat(3) {
-            Text(text = name)
-            Spacer(modifier = Modifier.height(16.dp))
-        }
+        Text(text = title)
+        Spacer(modifier = Modifier.height(8.dp))
+        Text(text = desc, fontSize = 18.sp, fontWeight = FontWeight.SemiBold)
+
     }
 }
 
@@ -54,6 +52,6 @@ fun Greeting(name: String) {
 @Composable
 fun DefaultPreview() {
     ComposeSamplesTheme {
-        Greeting("Android")
+        Greeting("Android", "Google Mobile OS")
     }
 }
